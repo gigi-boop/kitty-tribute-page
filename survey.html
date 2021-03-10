@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Kittyland Survey</title>
+    </head>
+    <body>
+        <h1>Let Us Know!</h1>
+        <br>
+        <h2>Please complete this brief survey.</h2>
+        <p><strong>Note:</strong>Survey will not actually be received by anyone.</p>
+        <form action="survey.php" method="post">
+            <p>First, please tell us your name:</p>
+                <p><input name="name" placeholder="First Name"></p>
+            <p>Now tell me a little secret:</p>
+                <p><input type="password" name="secret" placeholder="Pssst"></p>
+            <p>What types of cats do you like?</p>
+                <p><input type="checkbox" name="catTypes" value="fat">Fat cats</p>
+                <p><input type="checkbox" name="catTypes" value="fluffy">Fluffy cats</p>
+                <p><input type="checkbox" name="catTypes" value="floppy">Floppy cats</p>
+                <p><input type="checkbox" name="catTypes" value="all" checked>All of them!</p>
+            <p>Cats?</p>
+                <p><input type="radio" name="catsYes" value="Yes">Yes</p>
+                <p><input type="radio" name="catsYes" value="Yes">Yes</p>
+            <p>Please select a cat:</p>
+                <select name="catSelect">
+                    <option value="kitty1">Meow!</option>
+                    <option value="kitty2">Mreeeoooww</option>
+                    <option value="kitty3">mew mew!</option>
+                    <option value="kitty4">&#42;stare&#42;</option>
+                    <option value="imposterKitty" disabled>Pick me, I too am a cat</option>
+                </select>
+            <p>Any comments?</p>
+                <textarea rows="5" columns="10" placeholder="I love kitties! &hearts;"></textarea>
+            <p><input type="submit"></p>
+        </form>
+    </body>
+    </html>
