@@ -3,14 +3,18 @@
 <html>
 	<head>
 		<meta charset="utf-8">
+		<meta name="author" content="gigi-boop">
+		<meta name="description" content="A website for kitty lovers">
 		<title>I Love Kitties!</title>
 		<link rel="stylesheet" href="main.css">
 	</head>
 	
 	<body>
-		<h1 id="top">Kittyland</h1>
 
-		<h2>A Tribute to Kitties</h2>
+		<header>
+			<h1 id="top">Kittyland</h1>
+			<h2>A Tribute to Kitties</h2>
+		</header>
 
 		<img src="cute_cat.webp" width="590" height="334" alt="photo of a cute, sleepy kitty">
 
@@ -27,15 +31,15 @@
 		<h4>Reasons kitties are great:</h4>
 			<ul>
 				<li>They are soft and warm</li>
-				<li>They love you!</li>
-				<li>You love them!</li>
 				<li>They make cute sounds</li>
 				<li>They make cute shapes</li>
 				<li>They're derpy and funny</li>
 				<li>They're oh so <em>sweet!</em></li>
+				<li>They love you!</li>
+				<li>You love them!</li>
 			</ul>
 
-		<p>You can learn more about kitties <a href="https://en.wikipedia.org/wiki/Cat">here.</a></p>
+		<p>For more <abbr>kittybits</abbr> (tidbits about kitties) click <a href="fun.html">here!</a></p>
 
 		<h3><strong>Hey!</strong> Need some more cool cat links? Here you go!</h3>
 		<ul>
@@ -52,22 +56,23 @@
 		<h3>Here are a table:</h3>
 		<table>
 			<tr>
+				<th>Row 1, Header</th>
 				<td>Row 1, Cell 1</td>
-				<td>Row 1, Cell 2</td>
-				<td>Row 1, Cell 3</td>
+				<td colspan="2">Row 1, Cell 2</td>
 			</tr>
 			<tr>
-				<td>Row 2, Cell 1</td>
+				<th>Row 2, Header</th>
+				<td colspan="2">Row 2, Cell 1</td>
 				<td>Row 2, Cell 2</td>
 			</tr>
 			<tr>
+				<th rowspan="2">Row 3, Header</th>
 				<td>Row 3, Cell 1</td>
 				<td>Row 3, Cell 2</td>
 				<td>Row 3, Cell 3</td>
-				<td>Row 3, Cell 4</td>
 			</tr>
 			<tr>
-				<td>Row 4, Cell 1</td>
+				<td colspan="3">Row 4, Cell 1</td>
 			</tr>
 		</table>
 
