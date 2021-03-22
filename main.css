@@ -55,7 +55,7 @@ a {
 
 table {
     border: 2px solid #ccc;
-    background-color: #ffc;
+    background-color: #ffd;
 }
 
 tr {
@@ -67,6 +67,7 @@ td {
 }
 
 th {
+    background-color: rgba(0, 135, 135, .35);
     border: 1.5px solid #ccc;
 }
 
