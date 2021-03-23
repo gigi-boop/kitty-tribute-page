@@ -8,33 +8,73 @@
 
     <body>
         <h1>Let Us Know!</h1>
+
         <br>
+
         <h2>Please complete this brief survey.</h2>
+
         <p><strong>Note:</strong>Survey will not actually be received by anyone.</p>
+
         <form action="survey.php" method="post">
-            <p>First, please tell us your name:</p>
-                <p><input name="name" placeholder="First Name"></p>
-            <p>Now tell me a little secret:</p>
-                <p><input type="password" name="secret" placeholder="Pssst"></p>
-            <p>What types of cats do you like?</p>
-                <p><input type="checkbox" name="catTypes" value="fat">Fat cats</p>
-                <p><input type="checkbox" name="catTypes" value="fluffy">Fluffy cats</p>
-                <p><input type="checkbox" name="catTypes" value="floppy">Floppy cats</p>
-                <p><input type="checkbox" name="catTypes" value="all" checked>All of them!</p>
-            <p>Cats?</p>
-                <p><input type="radio" name="catsYes" value="Yes">Yes</p>
-                <p><input type="radio" name="catsYes" value="Yes">Yes</p>
-            <p>Please select a cat:</p>
-                <select name="catSelect">
-                    <option value="kitty1">Meow!</option>
-                    <option value="kitty2">Mreeeoooww</option>
-                    <option value="kitty3">mew mew!</option>
-                    <option value="kitty4">&#42;stare&#42;</option>
-                    <option value="imposterKitty" disabled>Pick me, I too am a cat</option>
+
+            <p>
+                <label for="name">First, please tell us your name:</label>
+                <input name="name" id="name" placeholder="First Name">
+            </p>
+
+            <p>
+                <label for="secret">Now, tell me a little secret:</label>
+                <input type="password" id="secret" name="secret" placeholder="Pssst">
+            </p>
+
+            <p>
+                <p>What types of cats do you like?</p>
+                
+                <input type="checkbox" id="fatCats" name="catTypes" value="fat">
+                <label for="fatCats">Fat cats</label>
+                
+                <input type="checkbox" id="fluffyCats" name="catTypes" value="fluffy">
+                <label for="fluffyCats">Fluffy cats</label>
+
+                <input type="checkbox" id="floppyCats" name="catTypes" value="floppy">
+                <label for="floppyCats">Floppy cats</label>
+
+                <input type="checkbox" id="allCats" name="catTypes" value="all" checked>
+                <label for="allCats">All of them!</label>
+            </p>
+
+            <p>
+                <p>Cats?</p>
+
+                <input type="radio" id="catsYes1" name="catsYes" value="Yes">
+                <label for="catsYes1">Yes</label>
+
+                <input type="radio" id="catsYes2" name="catsYes" value="Yes">
+                <label for="catsYes2">Yes</label>
+            </p>
+
+            <p>
+                <label for="catSelect">Please select a cat:</label>
+                <select id="catSelect" name="catSelect">
+                    <optgroup label="Kitties:">
+                        <option value="kitty1">Meow!</option>
+                        <option value="kitty2">Mreeeoooww</option>
+                        <option value="kitty3">mew mew!</option>
+                        <option value="kitty4">&#42;stare&#42;</option>
+                    </optgroup>
+                    <optgroup label="Fake kitty:">
+                        <option value="imposterKitty" disabled>Pick me, I too am a cat</option>
+                    </optgroup>
                 </select>
-            <p>Any comments?</p>
-                <textarea rows="5" columns="10" placeholder="I love kitties! &hearts;"></textarea>
-            <p><input type="submit"></p>
+            </p>
+
+            <p>
+                <label for="comments">Any comments?</label>
+                <textarea id="comments" rows="5" columns="10" placeholder="I love kitties! &hearts;"></textarea>
+            </p>
+
+            <p><button>Submit Survey</button></p>
+
         </form>
     </body>
     
