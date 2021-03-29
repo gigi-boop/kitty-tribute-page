@@ -50,7 +50,23 @@ img {
 
 a {
     text-decoration: none;
+    /* font-weight: bold; */
+}
+
+a:link {
     color: teal;
+}
+
+a:visited {
+    color: #A167A5;
+}
+
+a:hover, a:focus {
+    text-decoration: underline dashed red 1.5px;
+}
+
+input:focus, textarea:focus {
+    background-color: #eee;
 }
 
 table {
@@ -58,11 +74,7 @@ table {
     background-color: #ffd;
 }
 
-tr {
-    border: 1px solid #ccc;
-}
-
-td {
+tr, td {
     border: 1px solid #ccc;
 }
 
